@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:id="@+id/iv_title"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_type"
+            android:text="事件单号" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:text="00124578"
+            android:gravity="right"
+            android:background="@null"
+            style="@style/text_type"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:visibility="invisible"
+            android:src="@drawable/icon_right"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/linecolor" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/text_type"
+            android:layout_height="wrap_content"
+            android:text="事件类型" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:hint="选择事件类型"
+            android:gravity="right"
+            android:background="@null"
+            style="@style/text_type" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/icon_right"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/linecolor" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/text_type"
+            android:layout_height="wrap_content"
+            android:text="车道" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:hint="选择车道"
+            android:gravity="right"
+            android:background="@null"
+            style="@style/text_type" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/icon_right"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/linecolor" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/text_type"
+            android:layout_height="wrap_content"
+            android:text="事件类型" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:background="@null"
+            style="@style/text_type" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/icon_right"
+            android:visibility="invisible"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/linecolor" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/text_type"
+            android:layout_height="wrap_content"
+            android:text="处置方式" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:hint="选择处置方式"
+            android:gravity="right"
+            android:background="@null"
+            style="@style/text_type" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/icon_right"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/linecolor" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/text_type"
+            android:layout_height="wrap_content"
+            android:text="紧急度" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:hint="选择等级"
+            android:gravity="right"
+            android:background="@null"
+            style="@style/text_type" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/icon_right"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/linecolor" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/text_type"
+            android:layout_height="wrap_content"
+            android:text="桩号" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:hint="桩号"
+            android:gravity="right"
+            android:background="@null"
+            style="@style/text_type" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/icon_right"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/linecolor" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/text_type"
+            android:layout_height="wrap_content"
+            android:text="巡查类型" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:text="养护普通巡查"
+            android:gravity="right"
+            android:background="@null"
+            style="@style/text_type" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/icon_right"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/linecolor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:overScrollMode="never"
+            android:padding="15dp" />
+    </LinearLayout>
+
+</LinearLayout>

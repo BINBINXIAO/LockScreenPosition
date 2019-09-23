@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hdsx.hdyyglyh">
+
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 必加权限  权限 -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <!-- 忽略省电  权限 -->
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:windowSoftInputMode="adjustPan|stateHidden">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="cdf6906a89da94ac60c7aa378c75bfb6" />
+
+        <activity
+            android:name=".page.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".page.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".page.rcyh.LyjcActivity" />
+        <activity android:name=".page.rcyh.lyjcTypeActivity" />
+        <activity android:name=".page.jdwh.JdwhTypeActivity" />
+        <activity android:name=".page.jdwh.JdwhActivity" />
+        <activity android:name=".page.jdwh.DfpActivity" />
+        <activity android:name=".page.jdwh.WxdjActivity" />
+        <activity android:name=".page.jdwh.BjlyActivity" />
+        <activity android:name=".page.jdwh.WxfyActivity" />
+        <activity
+            android:name=".page.yhxc.XcMapActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".page.rcqs.RcqsActivity" />
+        <activity android:name=".page.lhyh.LhyhActivity" />
+        <activity android:name=".page.yhxc.SbsjActivity" />
+        <activity android:name=".page.yhxc.XlpzActivity" />
+
+        <service
+            android:name="com.hdsx.background.locationservice.LocationService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote1">
+            <intent-filter>
+                <action android:name="com.hdsx.background.locationservice.LocationService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.hdsx.background.locationservice.LocationHelperService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote2">
+            <intent-filter>
+                <action android:name="com.hdsx.background.locationservice.LocationHelperService" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".page.yhxc.LxbcActivity"></activity>
+    </application>
+
+</manifest>

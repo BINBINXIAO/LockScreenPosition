@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".page.MainActivity">
+
+    <include
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/item_toobar"/>
+
+    <LinearLayout
+
+        android:padding="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_lyjc"
+            android:layout_width="wrap_content"
+            android:text="履约检查"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_yhxc"
+            android:text="养护巡查"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_rcqs"
+            android:text="日常清扫"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_lvyh"
+            android:layout_width="wrap_content"
+            android:text="绿化养护"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_jdwh"
+            android:layout_width="wrap_content"
+            android:text="机电维护"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
